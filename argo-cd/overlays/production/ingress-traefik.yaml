@@ -16,13 +16,13 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`argo-cd.example.com`)
+    - match: Host(`argo-cd.k3d.io`)
       kind: Rule
       services:
         - name: argocd-server
           port: 80
     - kind: Rule
-      match: Host(`argo-cd.example.com`) && Headers(`Content-Type`, `application/grpc`)
+      match: Host(`argo-cd.k3d.io`) && Headers(`Content-Type`, `application/grpc`)
       priority: 11
       services:
         - name: argocd-server
