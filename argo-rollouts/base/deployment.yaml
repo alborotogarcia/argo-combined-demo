@@ -6,6 +6,8 @@ metadata:
 spec:
   template:
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: argo-rollouts
-          image: hi1280/argo-rollouts:v0.10.2
+          image: quay.io/argoproj/argo-rollouts:v1.0.2

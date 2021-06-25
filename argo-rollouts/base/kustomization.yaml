@@ -6,9 +6,7 @@ resources:
 - github.com/argoproj/argo-rollouts/manifests/crds
 - github.com/argoproj/argo-rollouts/manifests/base
 - github.com/argoproj/argo-rollouts/manifests/role
+- regcred.yaml
 #patches:
 #  - deployment.yaml
-images:
-- name: hi1280/argo-rollouts
-  newTag: v0.10.2
 namespace: argo-rollouts

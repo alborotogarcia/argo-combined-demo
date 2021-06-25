@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: storage
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: production
   source:
-    path: charts/prometheus
-    repoURL: https://github.com/prometheus-community/helm-charts.git
-    targetRevision: HEAD
+    path: charts/manifests
+    repoURL: https://github.com/alvarogg777/longhorn-charts.git
+    targetRevision: patch-1.1.2-rc1
   destination:
-    namespace: monitoring
+    namespace: storage
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:

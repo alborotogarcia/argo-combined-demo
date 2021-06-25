@@ -5,6 +5,8 @@ metadata:
 spec:
   template:
     spec:
+      imagePullSecrets:
+      - name: regcred
       initContainers:
       - name: copyutil
-        image: alinbalutoiu/argocd:v2.0.0
+        image: alinbalutoiu/argocd:v2.0.3

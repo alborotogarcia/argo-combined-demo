@@ -1,0 +1,8 @@
+[
+  {
+    "op": "add",
+    "path": "/spec/template/spec/imagePullSecrets/name",
+    "value": "regcred"
+  }
+]
+

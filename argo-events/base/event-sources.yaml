@@ -11,7 +11,7 @@ spec:
       targetPort: 12000
   github:
     argo-combined-app:
-      owner: vfarcic
+      owner: alvarogg777
       repository: argo-combined-app
       webhook:
         endpoint: /argo-combined-app

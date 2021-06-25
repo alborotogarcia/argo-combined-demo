@@ -10,7 +10,7 @@ spec:
   source:
     path: manifests/charts/base
     repoURL: https://github.com/alvarogg777/istio.git
-    targetRevision: 1.9.4-patch
+    targetRevision: 1.10.1-patch
     # helm:
     #   parameters:
     #   - name: global.hub

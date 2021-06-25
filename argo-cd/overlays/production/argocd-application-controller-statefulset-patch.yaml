@@ -5,6 +5,9 @@ metadata:
 spec:
   template:
     spec:
+      imagePullSecrets:
+      - name: regcred
       containers:
       - name: argocd-application-controller
-        image: alinbalutoiu/argocd:v2.0.0
+        image: alinbalutoiu/argocd:v2.0.3
+        # image: cyrilix/argocd:v2.0.1

@@ -10,7 +10,7 @@ spec:
   source:
     path: argo-cd/overlays/production
     repoURL: https://github.com/alvarogg777/argo-combined-demo
-    targetRevision: HEAD
+    targetRevision: master
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:

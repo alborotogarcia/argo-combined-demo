@@ -5,8 +5,10 @@ metadata:
 spec:
   template:
     spec:
+      imagePullSecrets:
+      - name: regcred
       containers:
       - name: argocd-server
-        image: alinbalutoiu/argocd:v2.0.0
+        image: alinbalutoiu/argocd:v2.0.3
         command: [argocd-server, --staticassets, /shared/app, --insecure]
 

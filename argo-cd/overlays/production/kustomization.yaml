@@ -3,6 +3,12 @@ kind: Kustomization
 resources:
 - ../../base
 - ingress-traefik.yaml
+- regcred.yaml
+patchesStrategicMerge:
+- argocd-application-controller-statefulset-patch.yaml
+- argocd-dex-server-deployment-patch.yaml
+- argocd-repo-server-deployment-patch.yaml
+- argocd-server-deployment-patch.yaml
 patches:
 - path: redis_patch.json
   target:
@@ -10,9 +16,8 @@ patches:
     version: v1
     kind: Deployment
     name: argocd-redis
-patchesStrategicMerge:
-- argocd-application-controller-statefulset-patch.yaml
-- argocd-dex-server-deployment-patch.yaml
-- argocd-repo-server-deployment-patch.yaml
-- argocd-server-deployment-patch.yaml
+#- path: regcred_patch.json
+#  target:
+#    group: apps
+#    version: v1
 namespace: argocd
