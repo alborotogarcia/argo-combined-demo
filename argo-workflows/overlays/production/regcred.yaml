@@ -1,0 +1,17 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: workflows
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCRYDqqNGLlYCcR9n3MKJQ4OROwqLwZsOhx/T5sOBbFnWugVAt7uty6eC8xrqRSVHZt/2UMw2JfFgET9W866TGYRKPuW4+hcPAiUlyD9vhrih1ZiCSqO5yMqtlFqhJuNffD+Qp0dsJegNzmO2ljAEjIuS3jOdqzXXxROoCoKja8rVXy7T8+ZQ6phJNQdXbZ9B6sGkJf/fv0yx0t4f5+8ehnT2WndIYMhupOaR07p8atqykvMYU/zkSBFRVXX1M6ZHiZO2inbVOWElJqAiNzJ8xrS3RmWnqoMR6ITSt2TCXJ/rCt65h5qhKBu3msSGUuqxRT/ebnOm/2SzrBI1fj5feXL79E8lcw5CSmNPPLQcCvkjW+/9o+zWaWEz0swdyjG6yED9rludN6PCvRtdfJLPLwSaaG0gRiFYUUFcqwk81ZuX7evVbnLEk0FIe0X39h/DFnyWFL1rK9FxDXHwPffrm0l656WMwLYKaJuWHiytvtbsnuNsXC5jegmedSAzkPTyZ6J+BYA28F3Z2lvUObrrHluxwVrmsBETsd33/EBmofmsvK6RLbIdPZYguamsYDIFtjMS21GY1oMK17Nb6Lc2ds6welEhPsU3SQ49kbcGtPSDni3d9k4++mbrehreIAELKZwB0imm/1Kn6P5f8ILruRZX8D7/0g4Kufsq0/vAkfrgLQ9nTnMLJm/2lRhY2X9hR8/8t53XKDZeKPzBOfq+KfS71OnohABAfxd3deK5AU6TZNsOGu+9kujJlj9VUfBI2EWyeL9PxMiArKBCYVX2H6Lnk+ntmfyi+94pRbsJLUBQ8V66geDpKx/QvpvmIyr2JTZTHBR/3Pyd7HlN7ATp98UyXHRTuVHC7CEphUsroOI3CItNkbLL44LK4HEiDSzYqHVYX1ctPm503zIZq7Drg0tmydbjFj
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: workflows
+    type: kubernetes.io/dockerconfigjson
+
