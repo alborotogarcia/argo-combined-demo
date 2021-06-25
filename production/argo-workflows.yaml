@@ -9,8 +9,8 @@ spec:
   project: production
   source:
     path: argo-workflows/overlays/production
-    repoURL: https://github.com/alvarogg777/argo-combined-demo
-    targetRevision: master
+    repoURL: https://github.com/alborotogarcia/argo-combined-demo
+    targetRevision: k3d
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:

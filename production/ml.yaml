@@ -10,7 +10,7 @@ spec:
   source:
     path: helm/manifests
     repoURL: https://github.com/alvarogg777/BentoML
-    targetRevision: patch-0.12.1
+    targetRevision: patch-k3d
   destination:
     namespace: ml
     server: https://kubernetes.default.svc
