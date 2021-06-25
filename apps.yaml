@@ -10,7 +10,7 @@ metadata:
 spec:
   project: production
   source:
-    repoURL: https://github.com/alborogarcia/argo-combined-demo.git
+    repoURL: https://github.com/alborotogarcia/argo-combined-demo.git
     targetRevision: k3d
     path: production
   destination:
@@ -33,7 +33,7 @@ metadata:
 spec:
   project: staging
   source:
-    repoURL: https://github.com/albotogarcia/argo-combined-demo.git
+    repoURL: https://github.com/alborotogarcia/argo-combined-demo.git
     targetRevision: k3d
     path: staging
   destination:
