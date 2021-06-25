@@ -10,8 +10,8 @@ metadata:
 spec:
   project: production
   source:
-    repoURL: https://github.com/alvarogg777/argo-combined-demo.git
-    targetRevision: HEAD
+    repoURL: https://github.com/alborogarcia/argo-combined-demo.git
+    targetRevision: k3d
     path: production
   destination:
     server: https://kubernetes.default.svc
@@ -33,8 +33,8 @@ metadata:
 spec:
   project: staging
   source:
-    repoURL: https://github.com/alvarogg777/argo-combined-demo.git
-    targetRevision: HEAD
+    repoURL: https://github.com/albotogarcia/argo-combined-demo.git
+    targetRevision: k3d
     path: staging
   destination:
     server: https://kubernetes.default.svc
