@@ -9,4 +9,4 @@ spec:
       - name: regcred
       initContainers:
       - name: copyutil
-        image: alinbalutoiu/argocd:v2.0.3
+        image: cyrilix/argocd:v2.0.4

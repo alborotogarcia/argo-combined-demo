@@ -9,5 +9,5 @@ spec:
       - name: regcred
       containers:
       - name: argocd-application-controller
-        image: alinbalutoiu/argocd:v2.0.3
-        # image: cyrilix/argocd:v2.0.1
+        # image: alinbalutoiu/argocd:v2.0.3
+        image: cyrilix/argocd:v2.0.4
