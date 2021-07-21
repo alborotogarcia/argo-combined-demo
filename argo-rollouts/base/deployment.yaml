@@ -11,3 +11,6 @@ spec:
       containers:
         - name: argo-rollouts
           image: quay.io/argoproj/argo-rollouts:v1.0.2
+          env:
+            - name: TZ
+              value: Europe/Madrid

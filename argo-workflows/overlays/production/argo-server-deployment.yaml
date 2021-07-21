@@ -20,4 +20,6 @@ spec:
               path: /
               port: 2746
               scheme: HTTP
-
+          env:
+            - name: TZ
+              value: Europe/Madrid

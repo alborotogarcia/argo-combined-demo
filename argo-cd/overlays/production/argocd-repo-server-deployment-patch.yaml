@@ -13,3 +13,5 @@ spec:
         env:
           - name: ARGOCD_EXEC_TIMEOUT
             value: "8m"
+            name: TZ
+            value: Europe/Madrid

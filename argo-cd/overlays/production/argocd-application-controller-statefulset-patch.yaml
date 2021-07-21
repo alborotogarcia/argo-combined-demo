@@ -11,3 +11,6 @@ spec:
       - name: argocd-application-controller
         # image: alinbalutoiu/argocd:v2.0.3
         image: cyrilix/argocd:v2.0.4
+        env:
+          - name: TZ
+            value: Europe/Madrid

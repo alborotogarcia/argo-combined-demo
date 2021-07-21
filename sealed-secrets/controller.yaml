@@ -181,6 +181,8 @@ spec:
         command:
         - controller
         env:
+        - name: TZ
+          value: Europe/Madrid
         - name: SEALED_SECRETS_UPDATE_STATUS
           value: "1"
         image: quay.io/bitnami/sealed-secrets-controller:v0.16.0
