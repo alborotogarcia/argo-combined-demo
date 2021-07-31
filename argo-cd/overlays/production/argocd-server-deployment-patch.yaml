@@ -10,7 +10,7 @@ spec:
       containers:
       - name: argocd-server
         # image: alinbalutoiu/argocd:v2.0.3
-        image: cyrilix/argocd:v2.0.4
+        image: cyrilix/argocd:v2.0.5
         command: [argocd-server, --staticassets, /shared/app, --insecure]
         env:
           - name: TZ
