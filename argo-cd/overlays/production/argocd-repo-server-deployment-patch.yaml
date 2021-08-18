@@ -9,7 +9,7 @@ spec:
       - name: regcred
       containers:
       - name: argocd-repo-server
-        image: cyrilix/argocd:v2.0.5
+        image: alinbalutoiu/argocd:v2.0.5
         env:
           - name: ARGOCD_EXEC_TIMEOUT
             value: "8m"
