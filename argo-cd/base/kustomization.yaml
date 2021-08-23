@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - github.com/argoproj/argo-cd//manifests/crds?ref=master
-- github.com/argoproj/argo-cd/manifests/base?ref=master
-- github.com/argoproj/argo-cd/manifests/cluster-rbac?ref=master
+- github.com/argoproj//argo-cd/manifests/base?ref=master
+- github.com/argoproj//argo-cd/manifests/cluster-rbac?ref=master
 namespace: argocd
