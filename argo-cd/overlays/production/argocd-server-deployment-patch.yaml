@@ -9,8 +9,7 @@ spec:
       - name: regcred
       containers:
       - name: argocd-server
-        # image: alinbalutoiu/argocd:v2.0.3
-        image: cyrilix/argocd:v2.0.5
+        image: jas612/argocd:v2.1.0
         command: [argocd-server, --staticassets, /shared/app, --insecure]
         env:
           - name: TZ
