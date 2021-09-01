@@ -9,7 +9,7 @@ spec:
       - name: regcred
       initContainers:
       - name: copyutil
-        image: jas612/argocd:v2.1.0
+        image: truebrain/argocd:v2.1.1
         env:
           - name: TZ
             value: Europe/Madrid
