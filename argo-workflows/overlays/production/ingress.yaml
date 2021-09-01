@@ -8,7 +8,7 @@ spec:
   - web
   - websecure
   routes: 
-  - match: Host(`argo-workflows.example.com`) 
+  - match: Host(`workflows.k3d.io`) 
     kind: Rule 
     services: 
     - name: argo-server
