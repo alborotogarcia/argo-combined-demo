@@ -9,7 +9,7 @@ spec:
       - name: regcred
       containers:
       - name: argocd-server
-        image: truebrain/argocd:v2.1.1
+        image: argoproj/argocd:v2.1.3
         command: [argocd-server, --staticassets, /shared/app, --insecure]
         env:
           - name: TZ
